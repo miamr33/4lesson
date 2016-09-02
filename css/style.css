@@ -46,7 +46,7 @@ body {
     font-family: "Tahoma";
 }
 .countries {
-	display:inline-block;
+	display: inline-block;
 	width: 485px;
 	margin:0;
 	box-shadow: none;
@@ -54,25 +54,32 @@ body {
     margin-left: 25px;
 }
 .countries ul {
-	float: right;
 	margin-right: 15px;
 }
 .countries li {
 	display: inline-block;
-	width: 60px;
+	width: 62px;
 	height: 60px;
 	position: relative;
-	margin-left: 12px;
+	margin-left: 10px;
 }
 .countries a {
 	font-size: 12px;
 	color: #41a1b9;
 	position: absolute;
 	top: 50px;
-	left: 10px;
 }
-.countries li:nth-child(5) {
-	width: 72px;
+.countries li:first-child a {
+    left: 13px;
+}
+.countries li:nth-child(2) a, .countries li:nth-child(3) a {
+    left: 14px;
+}
+.countries li:nth-child(4) a {
+    left: 16px;
+}
+.countries li:last-child a {
+    left: 4px;
 }
 .countries li:first-child {
     background-image: url(../img/india.png);
