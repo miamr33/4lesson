@@ -4,7 +4,7 @@ body {
 }
 .page {
     width: 1001px;
-    height: 976px;
+    padding-top: 50px;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 3px 10px rgba(0,0,0,0.9);
@@ -81,35 +81,28 @@ body {
 .countries li:last-child a {
     left: 4px;
 }
-.countries li:first-child {
-    background-image: url(../img/india.png);
+.countries li:first-child, .countries li:nth-child(2), .countries li:nth-child(3),
+.countries li:nth-child(4), .countries li:nth-child(5), .countries li:nth-child(6) {
     background-repeat: no-repeat;
 	background-position: center center;
 }
+.countries li:first-child {
+    background-image: url(../img/india.png);
+}
 .countries li:nth-child(2) {
     background-image: url(../img/nepal.png);
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 .countries li:nth-child(3) {
     background-image: url(../img/tibet.png);
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 .countries li:nth-child(4) {
     background-image: url(../img/bhutan.png);
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 .countries li:nth-child(5) {
     background-image: url(../img/shrilanka.png);
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 .countries li:last-child {
     background-image: url(../img/maldivy.png);
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 .countries a:hover {
     color: blue;
@@ -219,7 +212,7 @@ ul.menu > li:hover > ul.submenu {
 .centerColumn {
     padding-bottom: 20000px;
     margin-bottom: -20000px;
-    float: right;
+    float: left;
     width: 601px;
 }
 .rightColumn {
